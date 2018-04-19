@@ -1,0 +1,304 @@
+*{
+	padding:0px;
+	margin: 0px;
+} 
+a{
+	color: #000;
+	text-decoration: none;
+}
+ul,ol,li{
+	list-style: none;
+}
+body{
+	font:normal 14px/100% "Arial","MicroSoft Yahei","SinSun" ;
+	overflow: hidden;
+}
+.clearfloat{zoom:1;}
+.clearfloat:after{
+	display: block;clear: both;content: "";visibility: hidden;height: 0;
+}
+.HD{
+	width: 100%;
+	height: 60px;
+}
+.header{
+	float: right;
+	height: 60px;
+	position: relative;
+	top:0px;
+	right: 0px;
+	/*border:1px solid red;*/
+}
+.header .nav{
+    line-height: 60px;
+
+}
+.header .nav li{
+	float: right;
+	margin-right: 20px;
+	
+    font-weight: bold;
+}
+.header .nav li a{
+	text-decoration: underline;
+}
+.header .nav li a:hover{
+	color: #00c;
+}
+.header .set ul{
+    position: absolute;
+    top:50px;
+    left: 348px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.header .set li{
+	float: none;
+	
+	margin-right: 0px;
+	line-height: 100%;
+	
+}
+.header .set li a{
+	display: block;
+	padding:0 10px;
+	line-height: 26px;
+	font-weight: normal;
+    text-decoration: none;
+    /*border:1px solid #ccc;*/
+    display: none;
+}
+.header .set:hover li a{
+	display: block;
+}
+/*.header .set .cur a{
+	background-color: #38f;
+	color: #fff;
+}*/
+.header .set li a:hover{
+	background-color: #38f;
+	color: #fff;
+}
+.header .nav .more{
+	
+}
+.header .more li{
+	float: none;
+    
+}
+.header .nav .more a.more_product{
+    display: block;
+    margin-top:17px;
+    padding:0px 3px 0px 3px;
+    color: #fff;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    background-color:  #38f;
+    /*border:1px solid #ccc;*/
+}
+.header .more ul{
+	position: absolute;
+	top:3px;
+	width: 80px;
+	height: 1000px;
+	right: 10px;
+	border:1px solid #ccc;
+	background-color:rgba(105,127,130,0.1); 
+    display: none;
+}
+.header .more ul li{
+	height: 80px;
+	width: 80px;
+	padding-right: 0px;
+	/*border:1px solid red;*/
+}
+.header .more ul li a{
+	display: block;
+	height: 50px;
+	width: 36px;
+	margin: 0 auto;
+	padding-top: 30px;
+	color: #666;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+   
+}
+.header .more ul .more_product_1{
+	
+	height: 50px;
+	/*border:1px solid #ccc;*/
+	line-height: 50px;
+	text-align: center;
+	color: #666;
+}
+.header .more ul .rice a{
+	background: url(bdbri_icons_0a62ce1.png) no-repeat 1px 10px;
+}
+.header .more ul .music a{
+	background: url(bdbri_icons_0a62ce1.png) no-repeat -73px 10px;
+}
+.header .more ul .image a{
+	background: url(bdbri_icons_0a62ce1.png) no-repeat -112px 10px;
+}
+.header .more ul .know a{
+	background: url(bdbri_icons_0a62ce1.png) no-repeat -36px 10px;
+}
+.header .more ul .library a{
+	background: url(bdbri_icons_0a62ce1.png) no-repeat -146px 10px;
+}
+.header .more ul .first a{
+	width: 42px;
+	
+	font-size: 12px;
+	background: url(bdbri_icons_0a62ce1.png) no-repeat -180px 10px;
+}
+.header .more .all_product a{
+	width: 80px;
+	height: 40px;
+	padding-top:0px;
+	line-height: 40px;
+	border:none;
+    
+}
+.header .more:hover .more_product_1{
+	background-color:#ccc;
+}
+.header .more:hover ul{
+	display: block;
+}
+.header .more ul li a:hover{
+	color: #666;
+	text-decoration: underline;
+
+}
+.body{
+	width: 670px;
+	height: 100%;
+	/*border:1px solid red;*/
+	margin: 40px auto
+	/*padding-top:125px;*/
+}
+.body .logo img{
+	display: block;
+	margin: 0 auto;
+}
+.body .form_search{
+	
+	margin-top: 50px;
+	position: relative;
+
+}
+.body .form_search form{
+	height: 34px;
+	width: 100%;
+	display: block;
+	margin:0 auto;
+	background-color: #fff;
+	border:1px solid #ccc;
+}
+
+.body .form_search .text{
+
+	height: 34px;
+	width: 483px;
+	font-size: 18px;
+	padding-left: 5px;
+	line-height: 34px;
+	outline: none;
+	border:0px;
+	float: left;
+	
+}
+.body .form_search .button{
+	height: 34px;
+	width: 101px;
+	line-height: 34px;
+	border:0px;
+	float: right;
+	background-color: #38f;
+}
+.body .form_search .photograph{
+	width: 22px;
+	height: 19px;
+	position: absolute;
+	right: 115px;
+	top:9px;
+	background:url(camera_new_5606e8f.png) no-repeat 2px 1px;
+
+}
+.body .form_search .photograph:hover{
+	background:url(camera_new_5606e8f.png) no-repeat 2px -19px;
+}
+
+.body .baidu{
+	margin-top: 200px;
+	padding-top: 70px;
+	text-align: center;
+	background:url(zbios_efde696.png) no-repeat center top;
+}
+.body .introduce {
+	margin-top: 22px;
+	text-align: center;
+}
+.body .introduce a{
+	color: #999;
+	text-decoration: underline;
+	font-size: 12px;
+	margin-left:  15px;
+}
+.body .foot{
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	line-height: 36px;
+
+}
+.body .foot a{
+	font-size: 12px;
+	color: #999;
+	text-decoration: underline;
+}
+.body .foot .signal{
+	display: inline-block;
+	width: 25px;
+	height: 36px;
+	vertical-align: -15px;
+	background: url(icons_5859e57.png) no-repeat -596px -88px;
+}
+.body .foot .num{
+	display: inline-block;
+	margin-left: 35px;
+	/*border:1px solid red;*/
+    
+}
+.body .foot .office{
+	display: inline-block;
+	width: 25px;
+	height: 36px;
+	vertical-align: -15px;
+	/*border:1px solid red;*/
+	background: url(icons_5859e57.png) no-repeat -619px -88px;
+}
+#tip{
+	border:1px solid #ccc;
+	width: 669px;
+	position:absolute;
+	top: 100px;
+	left: 100px;
+	display: none;
+}
+#tip ul{
+}
+#tip ul li{
+	padding-left:10px;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+}
+#tip ul li:hover{
+	background-color: #ccc;
+}

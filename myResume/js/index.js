@@ -156,11 +156,11 @@ let messageRender=function () {
                 $talk.css('transform',`translateY(-${translateY}rem)`);
             }
             if(n>=$aryLi.length-1){
-                music.pause();
                 clearInterval(autoTime);
                 autoTime=null;
                 let tempT=null;
                     tempT=setTimeout(()=>{
+                    music.pause();
                     $messageBox.remove();
                     cubeRender.init();
                     clearTimeout(tempT);

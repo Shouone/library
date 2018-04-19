@@ -1,0 +1,156 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+}
+img{
+	display: inline-block;
+	border:none;
+}
+span{
+	display: inline-block;
+}
+/*div,a,ol,li,ul,p,h1,h2,h3,h4,img,span,dl,dd,dt,body{
+	border:1px solid red;
+}*/
+form,input,select,option{
+	border:none;
+}
+body{
+	font: 14px/100% Arial,"Microsoft Yahei","Simsun";
+}
+
+.header_index_inner{
+	width: 1200px;
+	margin:0 auto;
+	height: 80px;
+}
+.header_index_logo{
+	width: 355px;
+	float: left;
+	height: 80px;
+    overflow: hidden;
+}
+.header_index_logo h1{
+	margin-top: 15px;
+
+}
+.header_index_logo a{
+    width: 182px;
+    height: 51px;
+    line-height: 51px;
+    text-indent: -120px;
+
+    background: url(index-sprite3.d80cd081.png) no-repeat 0px 0px;
+}
+.header_index_search{
+	float: left;
+    margin-top: 16px;
+	height: 50px;
+	width: 450px;
+	position: relative;
+}
+.header_index_search .form{
+	border:1px solid #ccc;
+	width: 450px;
+	height: 50px;
+}
+.header_index_search .text,.submit{
+	
+	height:50px;
+	line-height: 50px;
+	font-size: 18px;
+    outline: none;
+    border:none;
+   
+}
+.header_index_search .text{
+	display: block;
+	color: #ccc;
+    width: 323px;
+    float: left;
+    padding-left: 10px;
+    margin-left: 65px;
+   
+
+}
+.header_index_search .submit{
+	float: right;
+	height: 50px;
+	width: 50px;
+	color: #23b8ff;
+    cursor: pointer;
+	background: #23b8ff url(logo.png)no-repeat 16px 16px;
+}
+
+.header_index_category{
+	float: right;
+	margin-top:2px;
+}
+.header_index_category a{
+	
+    line-height: 80px;
+    margin-left: 40px;
+}
+.header_index_category .class{
+	position: relative;
+    margin-left: 15px;
+    margin-right: -20px;
+}
+.header_index_category .my_class{
+    padding:0px 35px 0 20px;
+    margin-left: 0px;
+    background: url(logo.png) no-repeat -201px -5px;
+}
+.header_index_category .class{
+	
+}
+.header_index_category .class:hover .my_class{
+	box-shadow: 0px -1px 6px #ccc;
+	
+	background: url(logo.png) no-repeat -62px -5px;
+}
+.header_index_category .on_class{
+	position: absolute;
+	top:80px;
+	left: 0px;
+	padding:10px 0px;
+	box-shadow: 0px -1px 6px #ccc;
+	display: none;
+}
+.header_index_category .on_class a{
+    line-height: 36px;
+    margin-left: 0px;
+	width: 111px;
+	text-align: center;
+	
+}
+.header_index_category .class:hover .on_class{
+	display: block;
+}
+.header_index_category .on_class a:hover{
+	color:#23b8ff; 
+}
+.header_index_search .form #selectT{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 65px;
+	height:50px;
+	border:1px solid #ccc; 
+	overflow: hidden;
+}
+#labA,#labB{
+	height: 50px;
+	font-size: 18px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
