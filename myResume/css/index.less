@@ -1,0 +1,459 @@
+@import "reset.min.less";
+@import "animate.min.less";
+@import "swiper.min.less";
+
+html{font-size: 100px;}
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:#f4f4f4 ;
+  position: relative;
+  z-index: -5;
+}
+.mainBox{
+  max-width: 640px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #FFF;
+  position: relative;
+  z-index: -3;
+}
+.loadingBox,.phoneBox,.messageBox,.cubeBox,.detailBox{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+.loadingBox{
+  background: #000000;
+  .title{
+    position: absolute;
+    top:50%;
+    left: 0;
+    margin-top: -2.2rem;
+    width: 100%;
+    height: 1.4rem;
+    color: #fff;
+    h1{
+      text-align: center;
+      height: .75rem;
+      font-size: .5rem;
+      line-height: .75rem;
+      margin-bottom: .2rem;
+    }
+    h3{
+      height: .45rem;
+      font-size: .26rem;
+      letter-spacing: .04rem;
+      text-align: center;
+    }
+  }
+  .progressD{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: unit(-.15+1,rem);
+    margin-left: -2.3rem;
+    width: 4.6rem;
+    height: .3rem;
+    background: #FFF;
+    border-radius: .06rem;
+    .progressU{
+      background-repeat: repeat-x;
+      background: -webkit-linear-gradient(left bottom,#5cb85c 0%,#5cb85c 25%,
+      #74C274 25%,#74C274 50%,#5cb85c 50%,#5cb85c 75%,
+      #74C274 75%,#74C274 100%);
+      background-size: .3rem .3rem;
+      height: 100%;
+      width: 0;
+      border-radius: .06rem;
+      animation: loadingMove 1s linear infinite both;
+    }
+    @keyframes loadingMove{
+      0%{background-position: 0 0}
+      100%{background-position: 0 -.3rem}
+    }
+  }
+}
+.phoneBox{
+  background: url("../img/zf_phoneBg.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+  .header{
+    margin: .5rem auto;
+    width: 2.62rem;
+    height: unit(1.85+.3,rem);
+
+    img{
+      height: 1.25rem;
+    }
+    .time{
+      display: none;
+      font-size: .3rem;
+      height: .3rem;
+      line-height: .3rem;
+      text-align: center;
+      color: #FFF;
+      letter-spacing: .05rem;
+      margin-top: unit(1.85-1.75,rem);
+    }
+  }
+  .listen{
+    position: absolute;
+    bottom: .3rem;
+    left:50%;
+    margin-left: -2.6rem;
+    width: 5.2rem;
+    height: 3.6rem;
+    background: url("../img/zf_phoneListen.png") no-repeat;
+    background-size: 100% 100%;
+    .move{
+      position: absolute;
+      bottom:.47rem;
+      right: -.08rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      border:.03rem solid #0F0;
+      border-radius: 50%;
+      z-index: -1;
+      animation: touchMove 1s linear infinite both;
+      transition: .3s;
+    }
+    .touch{
+      position: absolute;
+      bottom:.47rem;
+      right: -.08rem;
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+@keyframes touchMove{
+  0%,100%{transform: scale(0)}
+  40%{transform: scale(.9)}
+  50%{transform: scale(1.2)}
+  60%{transform: scale(.9)}
+}
+  }
+  .detail{
+    position: absolute;
+    left: 50%;
+    margin-left: -2.6rem;
+    bottom: .28rem;
+    width: 5.2rem;
+    height: 6.59rem;
+    background: url("../img/zf_phoneDetail.png") no-repeat;
+    background-size: 100% 100%;
+    transform: translateY(6.89rem);
+    transition: .3s;
+    .pause{
+      position: absolute;
+      left: 50%;
+      margin-left: -0.8rem;
+      bottom: .28rem;
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+}
+.messageBox{
+  background: #EAEAEA;
+  .talk {
+    width: 100%;
+    margin-top: .2rem;
+    overflow: hidden;
+    transition: .3s;
+    li{
+      position: relative;
+      max-width: 3.6rem;
+      min-width: 2rem;
+      padding: .25rem;
+      margin-bottom: .4rem;
+      line-height: .4rem;
+      font-size: .26rem;
+      border-radius: .1rem;
+      transition: .3s;
+      transform: translateY(.1rem);
+      opacity:0;
+      i{
+        display: block;
+        position: absolute;
+        width:.1rem ;
+        height: .2rem;
+        top: .2rem;
+      }
+      img {
+        position: absolute;
+        top:0;
+        width: .82rem;
+        height: .82rem;
+        border-radius: 50%;
+      }
+      &.student{
+        float: left;
+        margin-left:1.25rem;
+        border:.02rem solid #CACACA;
+        background: #FFF;
+        i{
+          left: -.1rem;
+          background: url("../img/zf_messageArrow1.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        img {
+          left: -1rem;
+        }
+      }
+      &.teacher{
+        float: right;
+        margin-right: 1.25rem;
+        border: .02rem solid #96B474;
+        background:  #a2e55c;
+        i{
+          right: -.1rem;
+          background: url("../img/zf_messageArrow2.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        img{
+          right: -1rem;
+        }
+
+      }
+    }
+   }
+  .keybord{
+    position: absolute;
+    left: 0;
+    bottom: -.54rem;
+    width: 100%;
+    height: 5.16rem;
+    background: url("../img/zf_messageKeyboard.png") no-repeat;
+    background-size: 100% 100%;
+    transition: .3s;
+    transform: translateY(3.7rem);
+    .contain{
+      display: block;
+      position: absolute;
+      top:.35rem;
+      left: .9rem;
+      width: 4rem;
+      height: .4rem;
+      font-size: .25rem;
+      display: none;
+    }
+    .send{
+      display: none;
+      position: absolute;
+      right: .1rem;
+      bottom: .6rem;
+      width: 1.47rem;
+      height: .74rem;
+      background: url("../img/zf_messageChat.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  }
+.cubeBox{
+  perspective:2000px;
+  background: url("../img/zf_cubeBg.jpg") no-repeat;
+  background-size: cover;
+  .cubeList{
+    transform-style: preserve-3d;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -2.55rem;
+    margin-left: -2.55rem;
+    width: 5.1rem;
+    height: 5.1rem;
+    li{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &:nth-child(1){
+        transform: translateZ(2.55rem);
+      }
+      &:nth-child(2){
+        transform: translateZ(-2.55rem) rotateX(180deg);
+      }
+      &:nth-child(3){
+        transform: translateX(-2.55rem) rotateY(90deg);
+      }
+      &:nth-child(4){
+        transform: translateX(2.55rem) rotateY(-90deg);
+      }
+      &:nth-child(5){
+        transform: translateY(-2.55rem) rotateX(90deg);
+      }
+      &:nth-child(6){
+        transform: translateY(2.55rem) rotateX(-90deg);
+      }
+    }
+    transition:.3s;
+    transform: scale(.6) rotateX(-30deg) rotateY(-45deg);
+  }
+  .tip{
+    position: absolute;
+    left: 50%;
+    margin-left: -1.97rem;
+    bottom: .5rem;
+    width: 3.94rem;
+    height: .44rem;
+  }
+}
+.detailBox{
+  #returnLink{
+    position:absolute;
+    right: .2rem;
+    top:.2rem;
+    width: .64rem;
+    height: .75rem;
+    background: url("../img/zf_return.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 1000;
+  }
+  .swiper-container,.swiper-slide{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .page1{
+    perspective: 2000px;
+    .classList{
+      transform-style: preserve-3d;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      margin-top: -3.6rem;
+      margin-left: -2.7rem;
+      width: 5.4rem;
+      height: 7.2rem;
+      dt,dd{
+        width: 100%;
+        height: .6rem;
+        line-height: .6rem;
+        background: #8FBB4C;
+        box-sizing: border-box;
+      }
+      dt{
+        font-size: .4rem;
+        color: yellow;
+        text-align: center;
+      }
+
+      dd{
+        padding-left: .64rem;
+        border:.02rem dashed rgba(255,255,255,.3);
+        color: #000000;
+        font-size: .28rem;
+        position: relative;
+        p{
+          width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          i{
+            position: absolute;
+            left: .15rem;
+            top:50%;
+            margin-top: -.21rem;
+            width: .36rem;
+            height: .42rem;
+            color: #FFF;
+            font-size: .2rem;
+            line-height: .42rem;
+            text-align: center;
+            background: url("../img/zf_outline.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+  .page2{
+    background: #fff9c1;
+    h3{
+      width: 100%;
+      height: .9rem;
+      margin-top: .8rem;
+      color: #665c50;
+      text-align: center;
+      font-size: .6rem;
+      line-height: .9rem;
+    }
+    .imgArea{
+      img{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        margin-top: -.5rem;
+        margin-left: -.5rem;
+        width: 1rem;
+        height: 1rem;
+        &:nth-last-of-type(1){
+          margin-top: -.85rem;
+          margin-left: -.66rem;
+          width: 1.32rem;
+          height: 1.7rem;
+        }
+      }
+    }
+  }
+  #page2{
+    h3{
+      animation:bounceInLeft 1s 1 both;
+    }
+    .imgArea{
+      img{
+        transition: .3s;
+        &:nth-last-of-type(1){
+          animation: shake .8s  both;
+        }
+        &:not(:nth-last-of-type(1)){
+          animation:tada 1s .3s infinite both;
+        }
+
+        &:nth-of-type(1){
+          margin-top: -2.9rem;
+        }
+        &:nth-of-type(2){
+          margin-top: -1.7rem;
+          margin-left: 1.5rem;
+        }
+        &:nth-of-type(3){
+          margin-top: 0.7rem;
+          margin-left: 1.5rem;
+        }
+        &:nth-of-type(4){
+          margin-top: 1.9rem;
+        }
+        &:nth-of-type(5){
+          margin-top: 0.7rem;
+          margin-left: -2.5rem;
+        }
+        &:nth-of-type(6){
+          margin-top: -1.7rem;
+          margin-left: -2.5rem;
+        }
+      }
+    }
+  }
+  .page3{
+    background: #e45454;
+  }
+  .page4{
+    background: #faca71;
+  }
+  .page5{
+    background: #fbffe8;
+  }
+  .page6{
+    background: #5975ff;
+  }
+}

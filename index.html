@@ -1,0 +1,204 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,
+    user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+     minimum-scale=1.0">
+    <title>myResume2</title>
+    <link rel="stylesheet" href="css/index.min.css">
+    <!--<link rel="stylesheet/less" href="css/index.less">-->
+    <!--<script src="js/less-2.5.3.min.js"></script>-->
+    <script>
+        ~function () {
+            let computed=()=>{
+                let sev=640,
+                    dev=document.documentElement.clientWidth;
+                if(dev>sev) return;
+                document.documentElement.style.fontSize=dev/sev*100+'px';
+            }
+            computed();
+            window.addEventListener('resize',computed,false);
+        }();
+    </script>
+</head>
+<body>
+    <div class="mainBox">
+        <section class="loadingBox">
+            <div class="title">
+                <h1>珠峰培训</h1>
+                <h3>H5场景的交互型简历</h3>
+            </div>
+            <div class="progressD">
+                <div class="progressU">
+
+                </div>
+            </div>
+        </section>
+        <section class="phoneBox">
+            <div class="header">
+                <img src="img/zf_phoneLogo.png">
+                <p class="time">00:00</p>
+            </div>
+            <div class="listen">
+                <div class="move"></div>
+                <div class="touch"></div>
+            </div>
+            <div class="detail">
+                <div class="pause"></div>
+            </div>
+            <audio id="dream" src="audio/dream.mp3" loop preload="none"></audio>
+            <audio id="younth" src="audio/time.mp3" preload="none"></audio>
+        </section>
+        <section class="messageBox">
+            <ul class="talk">
+                <li class="student">
+                    <img src="img/zf_messageStudent.png">
+                    <i></i>
+                    曾经有一份真诚的爱情放在我面前，我没有珍惜
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。
+                </li>
+                <li class="student">
+                    <img src="img/zf_messageStudent.png">
+                    <i></i>
+                    如果上天能够给我一个再来一次的机会
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    我会对那个女孩子说三个字：我爱你
+                </li>
+                <li class="student">
+                    <img src="img/zf_messageStudent.png">
+                    <i></i>
+                    如果非要在这份爱上加上一个期限，我希望是……
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    一万年......
+                </li>
+                <li class="student">
+                    <img src="img/zf_messageStudent.png">
+                    <i></i>
+                    我的意中人是个盖世英雄，有一天他会踩着七色云彩来娶我
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    我猜中了前头可我猜不着这结局
+                </li>
+
+                <li class="student">
+                    <img src="img/zf_messageStudent.png">
+                    <i></i>
+                    他一定是个不平凡的人
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    我知道有一天他会在一个万众瞩目的情况下出现，
+                </li>
+                <li class="student">
+                    <img src="img/zf_messageStudent.png">
+                    <i></i>
+                    身披金甲圣衣，
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    脚踏七彩祥云来娶我！
+                </li>
+                <li class="student">
+                    <img src="img/zf_messageStudent.png">
+                    <i></i>
+                    喜欢一个人需要理由吗？
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    需要吗？
+                </li>
+                <li class="student">
+                    <img src="img/zf_messageStudent.png">
+                    <i></i>
+                    不需要吗？
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    需要吗？
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png">
+                    <i></i>
+                    我那么喜欢你，你喜欢我一下会死啊？
+                </li>
+            </ul>
+            <div class="keybord">
+                <span class="contain">等我失去的时候我才后悔莫及</span>
+                <div class="send"></div>
+            </div>
+            <audio id="music" src="audio/YaelNaïmNewSoul.mp3" preload="none"></audio>
+        </section>
+        <section class="cubeBox">
+            <ul class="cubeList">
+                <li><img src="img/zf_cube1.png"></li>
+                <li><img src="img/zf_cube2.png"></li>
+                <li><img src="img/zf_cube3.png"></li>
+                <li><img src="img/zf_cube4.png"></li>
+                <li><img src="img/zf_cube5.png"></li>
+                <li><img src="img/zf_cube6.png"></li>
+            </ul>
+            <img class="tip" src="img/zf_cubeTip.png">
+        </section>
+        <section class="detailBox">
+            <div class="swiper-container">
+                <a href="javascript:void (0);" id="returnLink"></a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide page1">
+                        <dl class="classList">
+                            <dt>课程大纲</dt>
+                            <dd><p><i>01</i>JavaScript核心基础部分</p></dd>
+                            <dd><p><i>02</i>JavaScript基础实战部分</p></dd>
+                            <dd><p><i>03</i>JavaScript源码级课程从原理到实战</p></dd>
+                            <dd><p><i>04</i>jQuery源码课程从原理到实战</p></dd>
+                            <dd><p><i>05</i>设计模式和设计规范</p></dd>
+                            <dd><p><i>06</i>基于Promise模式的AJAX</p></dd>
+                            <dd><p><i>07</i>模块化和组件开发实战</p></dd>
+                            <dd><p><i>08</i>协同开发和项目管理</p></dd>
+                            <dd><p><i>09</i>后台服务HTTP协议和Ajax</p></dd>
+                            <dd><p><i>10</i>BAT企业级webApp开发与实战</p></dd>
+                            <dd><p><i>11</i>React/Aagular/gulp/webpack</p></dd>
+                        </dl>
+                    </div>
+                    <div class="swiper-slide page2">
+                        <h3>课程体系</h3>
+                        <div class="imgArea">
+                            <img src="img/zf_course1.png">
+                            <img src="img/zf_course2.png">
+                            <img src="img/zf_course3.png">
+                            <img src="img/zf_course4.png">
+                            <img src="img/zf_course5.png">
+                            <img src="img/zf_course6.png">
+                            <img src="img/zf_course.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide page3"></div>
+                    <div class="swiper-slide page4"></div>
+                    <div class="swiper-slide page5"></div>
+                    <div class="swiper-slide page6"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/makisu.min.js"></script>
+<script src="js/index.js"></script>
+</html>
