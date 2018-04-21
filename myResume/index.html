@@ -6,9 +6,9 @@
     user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
      minimum-scale=1.0">
     <title>myResume2</title>
-    <link rel="stylesheet" href="css/index.min.css">
-    <!--<link rel="stylesheet/less" href="css/index.less">-->
-    <!--<script src="js/less-2.5.3.min.js"></script>-->
+    <!--<link rel="stylesheet" href="css/index.min.css">-->
+    <link rel="stylesheet/less" href="css/index.less">
+    <script src="js/less-2.5.3.min.js"></script>
     <script>
         ~function () {
             let computed=()=>{
@@ -157,41 +157,119 @@
             <img class="tip" src="img/zf_cubeTip.png">
         </section>
         <section class="detailBox">
+            <audio id="travemusic" src="audio/travemusic.mp3" loop preload="none"></audio>
             <div class="swiper-container">
                 <a href="javascript:void (0);" id="returnLink"></a>
+                <a href="javascript:void (0)" id="musicplay"></a>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide page1">
                         <dl class="classList">
-                            <dt>课程大纲</dt>
-                            <dd><p><i>01</i>JavaScript核心基础部分</p></dd>
-                            <dd><p><i>02</i>JavaScript基础实战部分</p></dd>
-                            <dd><p><i>03</i>JavaScript源码级课程从原理到实战</p></dd>
-                            <dd><p><i>04</i>jQuery源码课程从原理到实战</p></dd>
-                            <dd><p><i>05</i>设计模式和设计规范</p></dd>
-                            <dd><p><i>06</i>基于Promise模式的AJAX</p></dd>
-                            <dd><p><i>07</i>模块化和组件开发实战</p></dd>
-                            <dd><p><i>08</i>协同开发和项目管理</p></dd>
-                            <dd><p><i>09</i>后台服务HTTP协议和Ajax</p></dd>
-                            <dd><p><i>10</i>BAT企业级webApp开发与实战</p></dd>
-                            <dd><p><i>11</i>React/Aagular/gulp/webpack</p></dd>
+                            <dt>自我介绍</dt>
+                            <dd><p><i>01</i>姓名：林艺宾</p></dd>
+                            <dd><p><i>02</i>籍贯：福建漳州</p></dd>
+                            <dd><p><i>03</i>毕业院校：龙岩学院</p></dd>
+                            <dd><p><i>04</i>学历：本科</p></dd>
+                            <dd><p><i>05</i>毕业年月：2015.6</p></dd>
+                            <dd><p><i>06</i>出生：1990.10</p></dd>
+                            <dd><p><i>07</i>政治面貌：党员</p></dd>
+                            <dd><p><i>08</i>应聘职位：前端开发工程师</p></dd>
+                            <dd><p><i>09</i>电话：18359337296</p></dd>
+                            <dd><p><i>10</i>email：792025550@qq.com</p></dd>
+                            <dd><p><i>11</i>格言：简单的事情重复做，重复的事情认真做</p></dd>
                         </dl>
                     </div>
                     <div class="swiper-slide page2">
-                        <h3>课程体系</h3>
+                        <h3>掌握技能</h3>
                         <div class="imgArea">
                             <img src="img/zf_course1.png">
-                            <img src="img/zf_course2.png">
-                            <img src="img/zf_course3.png">
+                            <img class="vue" src="img/vue.jpg">
+                            <img class="react" src="img/react.jpg">
                             <img src="img/zf_course4.png">
                             <img src="img/zf_course5.png">
                             <img src="img/zf_course6.png">
                             <img src="img/zf_course.png">
                         </div>
                     </div>
-                    <div class="swiper-slide page3"></div>
-                    <div class="swiper-slide page4"></div>
-                    <div class="swiper-slide page5"></div>
-                    <div class="swiper-slide page6"></div>
+                    <div class="swiper-slide page3">
+                        <h3>前端语录</h3>
+                        <div class="contain">
+                            <p>学前端是一种态度</p>
+                            <p>越努力越幸福</p>
+                            <p>简单的事情重复做，重复的事情认真做</p>
+                        </div>
+                        <img class="huochai" src="img/huochai.png">
+                        <img class="yezi" src="img/yezi.png">
+                    </div>
+                    <div class="swiper-slide page4">
+                        <h3>案例展示</h3>
+                        <ul class="list">
+                            <li>
+                                <img src="img/my1.png">
+                                <div class="detail">
+                                    <p>仿造腾讯新闻页面的网页，主要运用到html、css和js</p>
+                                    <a href="https://shouone.github.io/library/my1" target="view_frame">查看链接</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/my2.png">
+                                <div class="detail">
+                                    <p>仿造博雅互动首页制作的网页，主要运用到html、css</p>
+                                    <a href="https://shouone.github.io/library/my2" target="view_frame">查看链接</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/my3.png">
+                                <div class="detail">
+                                    <p>仿造百度首页制作的网页，主要运用到html、css和js</p>
+                                    <a href="https://shouone.github.io/library/my3" target="view_frame">查看链接</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/my4.png">
+                                <div class="detail">
+                                    <p>仿造慕课网首页制作的网页，主要运用到html、css和js</p>
+                                    <a href="https://shouone.github.io/library/my4" target="view_frame">查看链接</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/todo.png">
+                                <div class="detail">
+                                    <p>基于vue框架制作的todo功能，可以实现事件添加，修改，删除，存储，统计事件数量</p>
+                                    <a href="https://shouone.github.io/library/todo" target="view_frame">查看链接</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide page5">
+                        <h3>基于vue制作的图书web App</h3>
+                        <div class="vue">
+                            <video class="vue1" poster="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=738233149,12459514&fm=27&gp=0.jpg" src="vedio/vue.mp4" controls="controls" preload="none"></video>
+                        </div>
+                        <div class="jieshao">
+                            <p>基于vue框架实现的一款组件化开发的简单web app
+                            首页实现轮播图播放及最新图书的更新，列表页可实现下拉刷新，图片懒加载功能，点击可进入
+                            详情页，详情页可更改图书信息，可加入购物车，删除图书，购物车页面可实现商品数目价格的统计，可增减数量，删除图书
+                            添加页可添加图书。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide page6">
+                        <div class="imglist">
+                        <img src="img/renwu.png">
+                        <img src="img/ganen1.png">
+                        <img src="img/fuchu1.png">
+                        <img src="img/peihe1.png">
+                        <img src="img/xiezuo1.png">
+                        </div>
+                        <div class="weixin">
+                            <p class="call">CALL ME</p>
+                            <img src="img/weixin.png">
+                            <p>18359337296</p>
+                            <p>email:792025550@qq.com</p>
+                        </div>
+                        <img class="yezi" src="img/yezi.png">
+
+                    </div>
                 </div>
             </div>
         </section>

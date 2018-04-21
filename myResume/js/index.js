@@ -53,7 +53,7 @@ let loadingRender=function () {
         }
     }
 }();
-     loadingRender.init();
+     // loadingRender.init();
 let phoneRender=function () {
      let $phoneBox=$('.phoneBox'),
          $time=$phoneBox.find('.time'),
@@ -278,10 +278,12 @@ let cubeRender=function () {
         }
     }
 }();
-     // cubeRender.init();
+     cubeRender.init();
 let detailRender=function () {
    let $detailBox=$('.detailBox'),
        $classList=$detailBox.find('.classList'),
+       travemusic=$('#travemusic')[0],
+       $musicplay=$('#musicplay'),
        $returnLink=$('#returnLink'),
        $cubeBox=$('.cubeBox'),
        swiperExample=null;
@@ -319,9 +321,26 @@ let back=()=>{
     })
 
 }
+let music=()=>{
+    travemusic.play();
+    travemusic.oncanplay=()=>{
+     $musicplay.css('display','block').addClass('run');
+    };
+    $musicplay.tap(()=>{
+        if(travemusic.paused){
+            travemusic.play();
+            $musicplay.addClass('run');
+            return;
+        }
+        travemusic.pause();
+        $musicplay.removeClass('run');
+    })
+
+}
     return {
         init:function (index=0) {
          $detailBox.css('display','block');
+            music();
                 swiperExample=new Swiper('.swiper-container',{
                     effect:'coverflow',
                     onInit:change,
@@ -331,6 +350,7 @@ let back=()=>{
             // swiperExample.slides[index].id='page'+(index+1);
             index=index>5?5:index;
             swiperExample.slideTo(index,0);
+
         }
     }
 }();
