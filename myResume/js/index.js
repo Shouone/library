@@ -53,7 +53,7 @@ let loadingRender=function () {
         }
     }
 }();
-     // loadingRender.init();
+     loadingRender.init();
 let phoneRender=function () {
      let $phoneBox=$('.phoneBox'),
          $time=$phoneBox.find('.time'),
@@ -278,7 +278,7 @@ let cubeRender=function () {
         }
     }
 }();
-     cubeRender.init();
+     // cubeRender.init();
 let detailRender=function () {
    let $detailBox=$('.detailBox'),
        $classList=$detailBox.find('.classList'),
